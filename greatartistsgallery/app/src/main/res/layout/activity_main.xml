@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Галерея великих художников"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#1E1E1E"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="openLeonardo">
+
+            <ImageView
+                android:id="@+id/leonardoPortrait"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/leonardo"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Леонардо да Винчи"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#1E1E1E"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="openVanGogh">
+
+            <ImageView
+                android:id="@+id/vanGoghPortrait"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vangogh"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Винсент Ван Гог"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#1E1E1E"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="openPicasso">
+
+            <ImageView
+                android:id="@+id/picassoPortrait"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/picasso"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Пабло Пикассо"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#1E1E1E"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="openRembrandt">
+
+            <ImageView
+                android:id="@+id/rembrandtPortrait"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rembrandt"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Рембрандт"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#1E1E1E"
+            android:padding="10dp"
+            android:onClick="openMonet">
+
+            <ImageView
+                android:id="@+id/monetPortrait"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/monet"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Клод Моне"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

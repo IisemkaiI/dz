@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#0A0A0A"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ПАЗЛ"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#00BCD4"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите сложность:"
+        android:textSize="16sp"
+        android:textColor="#AAAAAA"
+        android:layout_marginBottom="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/difficultyGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp">
+
+        <RadioButton
+            android:id="@+id/radioEasy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лёгкий (3×3)"
+            android:checked="true"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#00BCD4"
+            android:padding="16dp"/>
+
+        <RadioButton
+            android:id="@+id/radioMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Средний (4×4)"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#00BCD4"
+            android:padding="16dp"/>
+
+        <RadioButton
+            android:id="@+id/radioHard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сложный (5×5)"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#00BCD4"
+            android:padding="16dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="НАЧАТЬ"
+        android:textSize="18sp"
+        android:backgroundTint="#00BCD4"
+        android:textColor="#0A0A0A"/>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/myRed_200"
+    tools:context=".ChallengeActivity">
+
+    <TextView
+        android:id="@+id/difficultyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Уровень: Новичок"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ваше задание:"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/challengeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нажмите кнопку для генерации"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:background="@color/green"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="НОВЫЙ ЧЕЛЛЕНДЖ"
+        android:textSize="18sp"
+        android:backgroundTint="@color/myYellow_100"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="ВЕРНУТЬСЯ"
+        android:textSize="18sp"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/white" />
+
+</LinearLayout>
